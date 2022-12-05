@@ -95,7 +95,7 @@ class EditPerfume extends Component {
             <div>
                 <AccountNavbar/>
                 <div className="container mt-5">
-                    <h4><FontAwesomeIcon className="mr-2" icon={faEdit}/>Edit perfume</h4>
+                    <h4><FontAwesomeIcon className="mr-2" icon={faEdit}/>Chỉnh sửa sản phẩm</h4>
                     <form onSubmit={this.onFormSubmit}>
                         <div className="col-md-5 mb-5 mt-5">
                             <img src={IMG_URL + `${filename}`}
@@ -103,7 +103,7 @@ class EditPerfume extends Component {
                             <input type="file" name="file" onChange={this.handleFileChange}/>
                         </div>
                         <div className="form-group row">
-                            <label className="col-sm-2 col-form-label">Perfume title: </label>
+                            <label className="col-sm-2 col-form-label">Tên nước hoa: </label>
                             <div className="col-sm-6">
                                 <input
                                     type="text"
@@ -115,7 +115,7 @@ class EditPerfume extends Component {
                             </div>
                         </div>
                         <div className="form-group row">
-                            <label className="col-sm-2 col-form-label">Brand: </label>
+                            <label className="col-sm-2 col-form-label">Thương hiệu: </label>
                             <div className="col-sm-6">
                                 <input
                                     type="text"
@@ -127,7 +127,7 @@ class EditPerfume extends Component {
                             </div>
                         </div>
                         <div className="form-group row">
-                            <label className="col-sm-2 col-form-label">Release year: </label>
+                            <label className="col-sm-2 col-form-label">Năm phát hành: </label>
                             <div className="col-sm-6">
                                 <input
                                     type="text"
@@ -139,7 +139,7 @@ class EditPerfume extends Component {
                             </div>
                         </div>
                         <div className="form-group row">
-                            <label className="col-sm-2 col-form-label">Manufacturer country: </label>
+                            <label className="col-sm-2 col-form-label">Xuất xứ: </label>
                             <div className="col-sm-6">
                                 <input
                                     type="text"
@@ -151,7 +151,7 @@ class EditPerfume extends Component {
                             </div>
                         </div>
                         <div className="form-group row">
-                            <label className="col-sm-2 col-form-label">Perfume type: </label>
+                            <label className="col-sm-2 col-form-label">Loại sản phẩm: </label>
                             <div className="col-sm-6">
                                 <input
                                     type="text"
@@ -163,7 +163,7 @@ class EditPerfume extends Component {
                             </div>
                         </div>
                         <div className="form-group row">
-                            <label className="col-sm-2 col-form-label">Volume: </label>
+                            <label className="col-sm-2 col-form-label">Dung tích: </label>
                             <div className="col-sm-6">
                                 <input
                                     type="text"
@@ -175,7 +175,7 @@ class EditPerfume extends Component {
                             </div>
                         </div>
                         <div className="form-group row">
-                            <label className="col-sm-2 col-form-label">Gender: </label>
+                            <label className="col-sm-2 col-form-label">Giới tính: </label>
                             <div className="col-sm-6">
                                 <input
                                     type="text"
@@ -187,7 +187,7 @@ class EditPerfume extends Component {
                             </div>
                         </div>
                         <div className="form-group row">
-                            <label className="col-sm-2 col-form-label">Top notes: </label>
+                            <label className="col-sm-2 col-form-label">Nốt hương đầu: </label>
                             <div className="col-sm-6">
                                 <input
                                     type="text"
@@ -199,7 +199,7 @@ class EditPerfume extends Component {
                             </div>
                         </div>
                         <div className="form-group row">
-                            <label className="col-sm-2 col-form-label">Heart notes: </label>
+                            <label className="col-sm-2 col-form-label">Nốt hương giữa: </label>
                             <div className="col-sm-6">
                                 <input
                                     type="text"
@@ -211,7 +211,7 @@ class EditPerfume extends Component {
                             </div>
                         </div>
                         <div className="form-group row">
-                            <label className="col-sm-2 col-form-label">Base notes: </label>
+                            <label className="col-sm-2 col-form-label">Nốt hương cuối: </label>
                             <div className="col-sm-6">
                                 <input
                                     type="text"
@@ -223,7 +223,7 @@ class EditPerfume extends Component {
                             </div>
                         </div>
                         <div className="form-group row">
-                            <label className="col-sm-2 col-form-label">Price: </label>
+                            <label className="col-sm-2 col-form-label">Giá: </label>
                             <div className="col-sm-6">
                                 <input
                                     type="text"
@@ -235,7 +235,7 @@ class EditPerfume extends Component {
                             </div>
                         </div>
                         <button type="submit" className="btn btn-dark">
-                            <FontAwesomeIcon className="mr-2" icon={faEdit}/>Edit
+                            <FontAwesomeIcon className="mr-2" icon={faEdit}/>Chỉnh sửa
                         </button>
                     </form>
                 </div>

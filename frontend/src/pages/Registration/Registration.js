@@ -81,10 +81,10 @@ class Registration extends Component {
 
         return (
             <div className="container mt-5">
-                <h4><FontAwesomeIcon className="mr-2" icon={faUserPlus}/> SIGN UP</h4>
+                <h4><FontAwesomeIcon className="mr-2" icon={faUserPlus}/> ĐĂNG KÝ</h4>
                 <hr align="left" width="550"/>
                 {this.props.isRegistered ? <div className="alert alert-success col-6" role="alert">
-                    Activation code has been sent to your email!
+                    Mã kích hoạt đã được gửi đến email của bạn!
                 </div> : null}
                 <form onSubmit={this.onClickSignUp}>
                     <div className="form-group row">
@@ -101,7 +101,7 @@ class Registration extends Component {
                         </div>
                     </div>
                     <div className="form-group row">
-                        <label className="col-sm-2 col-form-label">User name: </label>
+                        <label className="col-sm-2 col-form-label">Tên tài khoản: </label>
                         <FontAwesomeIcon style={{position: "relative", top: "8px"}} icon={faUser}/>
                         <div className="col-sm-4">
                             <input
@@ -114,7 +114,7 @@ class Registration extends Component {
                         </div>
                     </div>
                     <div className="form-group row">
-                        <label className="col-sm-2 col-form-label">Password: </label>
+                        <label className="col-sm-2 col-form-label">Mật khẩu: </label>
                         <FontAwesomeIcon style={{position: "relative", top: "8px"}} icon={faLock}/>
                         <div className="col-sm-4">
                             <input
@@ -127,7 +127,7 @@ class Registration extends Component {
                         </div>
                     </div>
                     <div className="form-group row">
-                        <label className="col-sm-2 col-form-label">Confirm password: </label>
+                        <label className="col-sm-2 col-form-label">Nhập lại mật khẩu: </label>
                         <FontAwesomeIcon style={{position: "relative", top: "8px"}} icon={faLock}/>
                         <div className="col-sm-4">
                             <input
@@ -141,7 +141,7 @@ class Registration extends Component {
                     </div>
                     <div className="form-group row">
                         <button type="submit" className="btn btn-dark mx-3">
-                            <FontAwesomeIcon className="mr-2" icon={faUserPlus}/>Sign up
+                            <FontAwesomeIcon className="mr-2" icon={faUserPlus}/>Đăng ký
                         </button>
                     </div>
                     <ReCAPTCHA onChange={this.onChangeRecaptcha} sitekey="6Lc5cLkZAAAAAN8mFk85HQieB9toPcWFoW0RXCNR"/>

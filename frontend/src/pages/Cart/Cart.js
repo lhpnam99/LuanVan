@@ -32,11 +32,11 @@ class Cart extends Component {
                     <div>
                         {cartItems.length === 0 ?
                             <div style={{textAlign: "center"}}>
-                                <h2>Cart is empty</h2>
+                                <h2>Bạn chưa bỏ sản phẩm nào vào giỏ hàng</h2>
                             </div> :
                             <div>
                                 <p className="h4 mb-4 text-center">
-                                    <FontAwesomeIcon className="mr-2" icon={faShoppingCart}/> Cart
+                                    <FontAwesomeIcon className="mr-2" icon={faShoppingCart}/> Giỏ hàng
                                 </p>
                                 {cartItems.map((perfume) => {
                                     return (
@@ -55,10 +55,10 @@ class Cart extends Component {
                                                 </div>
                                                 <div className="col-2">
                                                     <div className="card-body">
-                                                        <h5 className="card-title"><span>$ {perfume.price}</span></h5>
+                                                        <h5 className="card-title"><span>{perfume.price} VNĐ</span></h5>
                                                         <button className="btn btn-warning mb-2"
                                                                 onClick={() => this.deleteFromCart(perfume.id)}>
-                                                            <FontAwesomeIcon className="mr-2" icon={faMinusSquare}/> Remove
+                                                            <FontAwesomeIcon className="mr-2" icon={faMinusSquare}/> Xóa
                                                         </button>
                                                     </div>
                                                 </div>
@@ -69,13 +69,13 @@ class Cart extends Component {
                                 <hr className="my-3"/>
                                 <div className="row">
                                     <div className="col-9">
-                                        <p className="h5 text-right">Total: $ <span>{totalCartPrice}</span></p>
+                                        <p className="h5 text-right">Thành tiền: <span>{totalCartPrice} VNĐ</span></p>
                                     </div>
                                     <div className="col-3">
                                         <div className="form-row">
                                             <Link to={"/order"}>
                                                 <button className="btn btn-success">
-                                                    <FontAwesomeIcon className="mr-2" icon={faShoppingBag}/> Checkout
+                                                    <FontAwesomeIcon className="mr-2" icon={faShoppingBag}/> Tiếp tục
                                                 </button>
                                             </Link>
                                         </div>

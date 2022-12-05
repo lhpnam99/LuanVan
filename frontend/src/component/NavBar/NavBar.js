@@ -48,11 +48,11 @@ class NavBar extends Component {
                 <>
                     <li className="nav-item">
                         <Link to={"/login"} className="nav-link pl-5 pr-3">
-                            <FontAwesomeIcon className="mr-2" icon={faSignInAlt}/>SIGN IN</Link>
+                            <FontAwesomeIcon className="mr-2" icon={faSignInAlt}/>ĐĂNG NHẬP</Link>
                     </li>
                     <li className="nav-item">
                         <Link to={"/registration"} className="nav-link">
-                            <FontAwesomeIcon className="mr-2" icon={faUserPlus}/>SIGN UP</Link>
+                            <FontAwesomeIcon className="mr-2" icon={faUserPlus}/>ĐĂNG KÝ</Link>
                     </li>
                 </>
             );
@@ -70,14 +70,14 @@ class NavBar extends Component {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav mr-auto ">
                                 <li className="nav-item">
-                                    <Link to={"/"}><span className="nav-link pl-5 pr-5">HOME</span></Link>
+                                    <Link to={"/"}><span className="nav-link pl-5 pr-5">TRANG CHỦ</span></Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link to={{pathname: "/menu", state: {id: "all"}}}>
-                                        <span className="nav-link pl-5 pr-5">PERFUMES</span></Link>
+                                        <span className="nav-link pl-5 pr-5">SẢN PHẨM</span></Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to={"/contacts"}><span className="nav-link pl-5 pr-5">CONTACTS</span></Link>
+                                    <Link to={"/contacts"}><span className="nav-link pl-5 pr-5">GIỚI THIỆU</span></Link>
                                 </li>
                             </ul>
                             <ul className="navbar-nav ml-auto">

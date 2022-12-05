@@ -10,17 +10,17 @@ const OrdersTable = ({orders}) => {
         <div>
             <AccountNavbar/>
             <div className="container mt-5">
-                <h4><FontAwesomeIcon className="ml-2 mr-2" icon={faShoppingBag}/> List of all orders</h4>
+                <h4><FontAwesomeIcon className="ml-2 mr-2" icon={faShoppingBag}/> Danh sách đơn hàng</h4>
                 <table className="table mt-4">
                     <thead>
                     <tr>
-                        <th scope="col">Order №</th>
-                        <th scope="col">Date</th>
-                        <th scope="col">Customer</th>
-                        <th scope="col">Address</th>
-                        <th scope="col">Post index</th>
-                        <th scope="col">Goods</th>
-                        <th scope="col">Sum, $</th>
+                        <th scope="col">Mã đơn</th>
+                        <th scope="col">Ngày</th>
+                        <th scope="col">Khách hàng</th>
+                        <th scope="col">Địa chỉ</th>
+                        <th scope="col">Mã bưu chính</th>
+                        <th scope="col">Mã sản phẩm</th>
+                        <th scope="col">Thành tiền, VNĐ</th>
                         <th scope="col"></th>
                     </tr>
                     </thead>
@@ -36,7 +36,7 @@ const OrdersTable = ({orders}) => {
                                 <th>
                                     {order.perfumeList.map((perfume) => {
                                         return (
-                                            <p key={perfume.id}>Id товара:
+                                            <p key={perfume.id}>
                                                 <Link to={`/product/${perfume.id}`}>{perfume.id}</Link>
                                             </p>
                                         )

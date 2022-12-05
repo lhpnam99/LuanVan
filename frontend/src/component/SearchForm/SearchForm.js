@@ -43,12 +43,12 @@ const SearchForm = ({data, searchByData, setFilteredData, setSearching}) => {
                     <input
                         type="text"
                         className="form-control"
-                        placeholder="Search..."
+                        placeholder="Tìm kiếm ..."
                         value={search}
                         onChange={(event) => setSearch(event.target.value)}/>
                 </div>
                 <button type="submit" className="btn btn-dark">
-                    <FontAwesomeIcon icon={faSearch}/> Search</button>
+                    <FontAwesomeIcon icon={faSearch}/> Tìm kiếm</button>
             </div>
         </form>
     );

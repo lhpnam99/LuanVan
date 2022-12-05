@@ -76,20 +76,20 @@ class Menu extends Component {
             <div className="container d-flex">
                 <nav id="sidebar">
                     <div className="sidebar-header">
-                        <h3>Perfumes</h3>
+                        <h3>Nước hoa</h3>
                     </div>
                     <ul className="list-unstyled components">
-                        <h5>Brand</h5>
+                        <h5>Thương hiệu</h5>
                         <li className="active mb-2" id="homeSubmenu">
                             <Checkbox list={perfumer}
                                       handleFilters={(filters) => this.handleFilters(filters, "perfumers")}/>
                         </li>
-                        <h5>Gender</h5>
+                        <h5>Giới tính</h5>
                         <li className="active mb-2">
                             <Checkbox list={gender}
                                       handleFilters={(filters) => this.handleFilters(filters, "genders")}/>
                         </li>
-                        <h5>Price</h5>
+                        <h5>Giá</h5>
                         <li className="active mb-2">
                             <CheckboxRadio list={price}
                                            handleFilters={(filters) => this.handleFilters(filters, "prices")}/>
@@ -97,9 +97,9 @@ class Menu extends Component {
                     </ul>
                 </nav>
                 <Route exact component={() => <MenuCards data={perfumes} itemsPerPage={16} searchByData={[
-                    {label: 'Brand', value: 'perfumer'},
-                    {label: 'Perfume title', value: 'perfumeTitle'},
-                    {label: 'Manufacturer country', value: 'country'}]}/>}/>
+                    {label: 'Thương hiệu', value: 'perfumer'},
+                    {label: 'Tên nước hoa', value: 'perfumeTitle'},
+                    {label: 'Xuất xứ', value: 'country'}]}/>}/>
             </div>
         );
     }

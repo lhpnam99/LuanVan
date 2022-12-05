@@ -48,7 +48,7 @@ class Login extends Component {
 
         return (
             <div id="container" className="container mt-5">
-                <h4><FontAwesomeIcon className="mr-3" icon={faSignInAlt}/>SIGN IN</h4>
+                <h4><FontAwesomeIcon className="mr-3" icon={faSignInAlt}/>ĐĂNG NHẬP</h4>
                 <hr align="left" width="550"/>
                 {error ? <div className="alert alert-danger col-6" role="alert">{error}</div> : null}
                 {success ? <div className="alert alert-success col-6" role="alert">{success}</div> : null}
@@ -66,7 +66,7 @@ class Login extends Component {
                         </div>
                     </div>
                     <div className="form-group row">
-                        <label className="col-sm-2 col-form-label">Password: </label>
+                        <label className="col-sm-2 col-form-label">Mật khẩu: </label>
                         <FontAwesomeIcon style={{position: "relative", top: "8px"}} icon={faLock}/>
                         <div className="col-sm-4">
                             <input
@@ -79,9 +79,9 @@ class Login extends Component {
                     </div>
                     <div className="form-group row">
                         <button type="submit" className="btn btn-dark mx-3">
-                            <FontAwesomeIcon className="mr-3" icon={faSignInAlt}/>Sign in
+                            <FontAwesomeIcon className="mr-3" icon={faSignInAlt}/>Đăng nhập
                         </button>
-                        <Link to={"/forgot"} style={{position: "relative", top: "8px"}}>Forgot password?</Link>
+                        <Link to={"/forgot"} style={{position: "relative", top: "8px"}}>Quên mật khẩu?</Link>
                     </div>
                 </form>
             </div>
