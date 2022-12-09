@@ -55,7 +55,7 @@ class Cart extends Component {
                                                 </div>
                                                 <div className="col-2">
                                                     <div className="card-body">
-                                                        <h5 className="card-title"><span>{perfume.price} VNĐ</span></h5>
+                                                        <h5 className="card-title"><span>{perfume.price} vnd</span></h5>
                                                         <button className="btn btn-warning mb-2"
                                                                 onClick={() => this.deleteFromCart(perfume.id)}>
                                                             <FontAwesomeIcon className="mr-2" icon={faMinusSquare}/> Xóa
@@ -69,7 +69,7 @@ class Cart extends Component {
                                 <hr className="my-3"/>
                                 <div className="row">
                                     <div className="col-9">
-                                        <p className="h5 text-right">Thành tiền: <span>{totalCartPrice} VNĐ</span></p>
+                                        <p className="h5 text-right">Thành tiền: <span>{totalCartPrice} vnd</span></p>
                                     </div>
                                     <div className="col-3">
                                         <div className="form-row">

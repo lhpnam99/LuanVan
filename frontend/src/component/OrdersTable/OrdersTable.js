@@ -18,9 +18,9 @@ const OrdersTable = ({orders}) => {
                         <th scope="col">Ngày</th>
                         <th scope="col">Khách hàng</th>
                         <th scope="col">Địa chỉ</th>
-                        <th scope="col">Mã bưu chính</th>
+                        <th scope="col">Số điện thoại</th>
                         <th scope="col">Mã sản phẩm</th>
-                        <th scope="col">Thành tiền, VNĐ</th>
+                        <th scope="col">Thành tiền, vnd</th>
                         <th scope="col"></th>
                     </tr>
                     </thead>
@@ -32,7 +32,7 @@ const OrdersTable = ({orders}) => {
                                 <th>{order.date}</th>
                                 <th>{order.firstName + " " + order.lastName}</th>
                                 <th>{order.city + " " + order.address}</th>
-                                <th>{order.postIndex}</th>
+                                <th>{order.phoneNumber}</th>
                                 <th>
                                     {order.perfumeList.map((perfume) => {
                                         return (

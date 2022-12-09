@@ -67,11 +67,11 @@ class Perfume extends Component {
                         <p>Mã sản phẩm: <span>{perfume.id}</span></p>
                         <p style={{color: "#54C0A1"}}>Còn bán</p>
                         <div className="row ml-1">
-                            <h6 className="mr-5"><span>{perfume.price}</span>.00 VNĐ</h6>
+                            <h6 className="mr-5"><span>{perfume.price}</span> vnd</h6>
                             <button type="submit"
                                     className="btn btn-success mx-3"
                                     onClick={this.addToCart}>
-                                <FontAwesomeIcon className="mr-2 fa-lg" icon={faCartPlus}/> ADD TO CART
+                                <FontAwesomeIcon className="mr-2 fa-lg" icon={faCartPlus}/> THÊM VÀO GIỎ
                             </button>
                         </div>
                         <br/>

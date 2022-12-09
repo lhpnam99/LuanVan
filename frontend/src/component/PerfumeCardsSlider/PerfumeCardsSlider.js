@@ -53,7 +53,7 @@ class PerfumeCardsSlider extends Component {
         return (
             <div>
                 <div className="container text-center my-3">
-                    <h3>SẢN PHẨM BÁN CHẠY</h3>
+                    <h3>SẢN PHẨM ĐỀ XUẤT</h3>
                 </div>
                 <div className="container mt-5" id="indicators">
                     <form method="get" action="/">

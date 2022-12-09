@@ -22,7 +22,7 @@ const PerfumeCardItem = ({perfume, colSize, link, btnName}) => {
                 <div className="card-body text-center">
                     <h5>{perfume.perfumeTitle}</h5>
                     <h6>{perfume.perfumer}</h6>
-                    <h6><span>{perfume.price}</span>.00 VNĐ</h6>
+                    <h6><span>{perfume.price}</span> vnd</h6>
                 </div>
                 <div className="text-center align-items-end mb-3">
                     <Link to={`${link}/${perfume.id}`}>

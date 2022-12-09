@@ -32,10 +32,10 @@ const gender = [
 
 const price = [
     {"id": 1, "name": "any", "array": []},
-    {"id": 2, "name": "15 - 25 $", "array": [15, 25]},
-    {"id": 3, "name": "25 - 40 $", "array": [25, 40]},
-    {"id": 4, "name": "40 - 90 $", "array": [40, 90]},
-    {"id": 5, "name": "90 - 175+ $", "array": [90, 250]}
+    {"id": 2, "name": "100000 - 999000 vnd", "array": [100000, 999000]},
+    {"id": 3, "name": "1000000 - 1999000 vnd", "array": [1000000, 1999000]},
+    {"id": 4, "name": "2000000 - 4999000 vnd", "array": [2000000, 4999000]},
+    {"id": 5, "name": "5000000 - 9999000 vnd", "array": [5000000, 9999000]}
 ]
 
 export {perfumer, gender, price};

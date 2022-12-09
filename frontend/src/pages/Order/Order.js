@@ -174,7 +174,7 @@ class Order extends Component {
                                                     <div className="card-body text-center">
                                                         <h5>{perfume.perfumeTitle}</h5>
                                                         <h6>{perfume.perfumer}</h6>
-                                                        <h6><span>{perfume.price}</span>.00 VNĐ</h6>
+                                                        <h6><span>{perfume.price}</span> vnd</h6>
                                                     </div>
                                                 </div>
                                             </div>
@@ -186,7 +186,7 @@ class Order extends Component {
                                 <FontAwesomeIcon icon={faCheckCircle}/> Thanh toán
                             </button>
                             <div className="row">
-                                <h4>Thành tiền: <span>{totalPrice}</span>.00 VNĐ</h4>
+                                <h4>Thành tiền: <span>{totalPrice}</span> vnd</h4>
                             </div>
                         </div>
                     </div>
